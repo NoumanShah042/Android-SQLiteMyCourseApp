@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".UpdateCourseActivity">
 
     <!--Edit text to enter course name-->
     <EditText
@@ -38,24 +38,22 @@
         android:layout_margin="10dp"
         android:hint="Enter Course Description" />
 
-    <!--button for adding new course-->
+    <!--button for updating our course-->
     <Button
-        android:id="@+id/idBtnAddCourse"
+        android:id="@+id/idBtnUpdateCourse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Add Course"
+        android:text="Update Course"
         android:textAllCaps="false" />
 
-    <!--new button for opening our course list activity-->
+    <!--button for deleting our course-->
     <Button
-        android:id="@+id/idBtnReadCourse"
+        android:id="@+id/idBtnDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Read All Courses"
+        android:text="Delete Course"
         android:textAllCaps="false" />
-
-
 
 </LinearLayout>

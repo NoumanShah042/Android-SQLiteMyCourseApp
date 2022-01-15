@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SQLiteMyCourseApp">
         <activity
+            android:name=".UpdateCourseActivity"
+            android:exported="false" />
+        <activity
             android:name=".ViewCourses"
             android:exported="false" />
         <activity

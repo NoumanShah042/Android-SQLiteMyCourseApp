@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     // creating variables for our edittext, button and dbhandler
     private EditText courseNameEdt, courseTracksEdt, courseDurationEdt, courseDescriptionEdt;
-    private Button addCourseBtn, readCourseBtn;
+    private Button addCourseBtn, readCourseBtn,deleteCourseBtn;
     private DBHandler dbHandler;
 
     @Override
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         courseDescriptionEdt = findViewById(R.id.idEdtCourseDescription);
         addCourseBtn = findViewById(R.id.idBtnAddCourse);
         readCourseBtn = findViewById(R.id.idBtnReadCourse);
+        deleteCourseBtn = findViewById(R.id.idBtnDelete);
 
         // creating a new dbhandler class
         // and passing our context to it.
@@ -71,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+
 
     }
 }
