@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         courseTracksEdt = findViewById(R.id.idEdtCourseTracks);
         courseDurationEdt = findViewById(R.id.idEdtCourseDuration);
         courseDescriptionEdt = findViewById(R.id.idEdtCourseDescription);
+
         addCourseBtn = findViewById(R.id.idBtnAddCourse);
         readCourseBtn = findViewById(R.id.idBtnReadCourse);
         deleteCourseBtn = findViewById(R.id.idBtnDelete);
