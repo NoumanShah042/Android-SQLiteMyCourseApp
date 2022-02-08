@@ -9,15 +9,15 @@
 
 * Main Page
 <br><br>
-<img src="screenshots/a.png" width="300">
+<img src="screenshots/c.png" width="300">
  
 
 * Showing data 
 <br><br>
-<img src="screenshots/b.png" width="300">
+<img src="screenshots/a.png" width="300">
 
 
 
 * open UpdateCourseActivity when click on any course
 <br><br>
-<img src="screenshots/c.png" width="300">
+<img src="screenshots/b.png" width="300">
