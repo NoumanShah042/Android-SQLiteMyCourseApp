@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -48,6 +49,9 @@ public class CourseRVAdapter extends RecyclerView.Adapter<CourseRVAdapter.ViewHo
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                consider this v as the root of row item file
+//                TextView courseName = v.findViewById(R.id.idTVCourseName);
+//                Toast.makeText(v.getContext(), courseName.getText(), Toast.LENGTH_SHORT).show();
 
                 // on below line we are calling an intent.
                 Intent i = new Intent(context, UpdateCourseActivity.class);

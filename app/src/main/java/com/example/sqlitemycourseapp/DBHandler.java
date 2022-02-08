@@ -60,6 +60,13 @@ public class DBHandler extends SQLiteOpenHelper {
         db.execSQL(query);
     }
 
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        // this method is called to check if the table exists already.
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+        onCreate(db);
+    }
+
     // this method is use to add new course to our sqlite database.
     public void addNewCourse(String courseName, String courseDuration, String courseDescription, String courseTracks) {
 
@@ -151,10 +158,5 @@ public class DBHandler extends SQLiteOpenHelper {
         db.close();
     }
 
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // this method is called to check if the table exists already.
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-        onCreate(db);
-    }
+
 }
